@@ -6,7 +6,7 @@ services:
       dockerfile: Dockerfile
     image: mission-control:latest
     ports:
-      - "4000:4000"
+      - "127.0.0.1:4000:4000"
     env_file:
       - path: .env
         required: false
@@ -20,8 +20,14 @@ services:
     volumes:
       - mission-control-data:/app/data
       - mission-control-workspace:/app/workspace
+    networks:
+      - stack_agent-net
     restart: unless-stopped
 
 volumes:
   mission-control-data:
   mission-control-workspace:
+
+networks:
+  stack_agent-net:
+    external: true
