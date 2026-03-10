@@ -21,7 +21,9 @@
 </p>
 
 <p align="center">
-  <video src="https://github.com/crshdn/mission-control/releases/download/v1.5.0/autensa-demo.mp4" width="100%" controls autoplay muted></video>
+
+https://github.com/user-attachments/assets/76af060c-fdb1-40cb-b575-46c7a807845d
+
 </p>
 
 <p align="center">
