@@ -1597,10 +1597,10 @@ const migrations: Migration[] = [
     }
   },
   {
-    id: '029',
+    id: '031',
     name: 'add_browser_qa_columns',
     up: (db) => {
-      console.log('[Migration 029] Adding browser QA columns...');
+      console.log('[Migration 031] Adding browser QA columns...');
 
       // Per-product toggle for browser testing
       db.exec(`ALTER TABLE products ADD COLUMN browser_test_enabled INTEGER DEFAULT 1`);
@@ -1608,7 +1608,7 @@ const migrations: Migration[] = [
       // Dev server URL used during testing (set at dispatch time)
       db.exec(`ALTER TABLE tasks ADD COLUMN browser_test_url TEXT`);
 
-      console.log('[Migration 029] browser_test_enabled (products) and browser_test_url (tasks) added');
+      console.log('[Migration 031] browser_test_enabled (products) and browser_test_url (tasks) added');
     }
   }
 ];
